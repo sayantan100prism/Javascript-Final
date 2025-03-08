@@ -34,22 +34,7 @@
 --> Inorder to remove a Property use delete()
 
    <script>
-        var pizza = {
-        crust : 'thin',
-        toppings : 3,
-        hasBacon : true,
-        howManyToppings : function(){  // NOTE : 'howManyToppings' is called METHOD
-            return this.toppings;
-        }
-    };
-    pizza.price = '12$'; //// in js we can access the feature of adding another property after creating object
-    
-    console.log(pizza.howManyToppings()); // 3
-
-
-    delete(pizza.crust);
-
-    console.log(pizza); // {toppings: 3, hasBacon: true, howManyToppings: ƒ, price: '12$'}
+        : '12$'}
 
    </script>
 
@@ -98,7 +83,22 @@
    console.log(pizzaA.crust);// pan
    console.log(pizzaB.crust); // thin
 
-   console.log(pizzaB  instanceof  Pizza);  // true
+   console.log(pizzaB  instanceof  Pizza);  // truevar pizza = {
+        crust : 'thin',
+        toppings : 3,
+        hasBacon : true,
+        howManyToppings : function(){  // NOTE : 'howManyToppings' is called METHOD
+            return this.toppings;
+        }
+    };
+    pizza.price = '12$'; //// in js we can access the feature of adding another property after creating object
+    
+    console.log(pizza.howManyToppings()); // 3
+
+
+    delete(pizza.crust);
+
+    console.log(pizza); // {toppings: 3, hasBacon: true, howManyToppings: ƒ, price
       console.log(pizzaB.constructor); 
    /*output
    ƒ (){    // function object
